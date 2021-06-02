@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
 /**Reglage général**/
-html, body{
+
+body, html {
 	width : 100%;
-}
-body {
 	height: 100%;
-	font-family: "Roboto", sans-serif;
+	font-family: Roboto, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -21,8 +20,7 @@ body {
     justify-content: center;
 	box-sizing: border-box;
 }
-h1,
-h2,
+
 h3,
 h4,
 h5,
@@ -65,3 +63,64 @@ ul {
 	padding : 0;
 	margin : 0 ;
 }
+
+main {
+	display: grid;
+    grid-template-columns: 1fr;
+}
+/*Localisation*/
+.location {
+    display: flex;
+	background-color: #e6e6e6;
+    align-items: center;
+	padding : 16px;
+	justify-content: center;
+}
+.location .fas {
+	padding: 8px 16px;
+}
+.location .input-field input {
+    background-color: transparent;
+    border: 0;
+}
+.location .input-field input::placeholder{
+	font-weight: 900;
+	color : black ;
+}
+
+/*Section explore restaurants*/
+.explore-restaurants {
+	background-color: #f3f3f3;
+    padding: 22px;
+    text-align: center;
+}
+.explore-restaurants h1 {
+	padding-bottom: 8px;
+	font-weight: bold;
+}
+.explore-restaurants h2 {
+	color: #707070;
+    font-size: 18px ;
+    font-weight: normal;
+}
+
+button {
+    border: none;
+    padding: 16px;
+    margin: 32px 0;
+    font-size: large;
+    color: white;
+    background-image: linear-gradient(-10deg, #9356DC, #FF79DA);
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    transition: background-image 2s linear 2s, box-shadow 1s;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
