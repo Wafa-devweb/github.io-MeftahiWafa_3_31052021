@@ -14,7 +14,6 @@ body, html {
     outline: 0;
     vertical-align: baseline;
     background: transparent;
-    position: fixed;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -31,22 +30,23 @@ h6 {
 ul {
   list-style: none;
 }
-.loadspinner {
-    -webkit-animation: loadspinner 2s;
-    animation: loadspinner 2s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    background-color: rgba(10, 10, 10, 0.6);
-    bottom: 0;
-    left: 0;
+/*Loadspinner*/
+.loadspinner /*
     position: fixed;
-    right: 0;
-    text-align: center;
-    top: 0;
-    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    animation: fade-out 0.4s ease-in-out both;
+    animation-delay: 1.5s;
 }
+.rubik-loader {
+    color:#9356DC;
+}
+****a finir*/
 
 /*header*/
 .header, .headerMenu {
@@ -130,6 +130,55 @@ button {
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
     transition: background-image 2s linear 2s, box-shadow 1s;
 }
+/*operation*/
+
+.operation{
+    display: flex;
+    padding: 15px;
+    max-width: 1280px;
+    margin: 0 ;
+    position: relative;
+    flex-direction: column;  
+}
+.operating-bar{
+    margin: 0;
+    padding: 0;
+    counter-reset: compteListe;
+}
+.bar {
+    padding: 24px;
+    margin: 16px 0 16px 12px;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+}
+.bar::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -.75rem;
+}
+.bar:first-child {
+    margin-top: 0;
+}
+.tuto__icon {
+    margin-right: 1rem;
+    color: #7e7e7e;
+}
+.fa-mobile-alt:before {
+    content: "\f3cd";
+}
+
 
 
 
