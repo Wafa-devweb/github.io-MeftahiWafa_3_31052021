@@ -17,7 +17,14 @@ body, html {
     background-color: white;
     align-items: center;
     justify-content: center;
-	box-sizing: border-box;
+    	box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style-type: none;
 }
 h3,
 h4,
@@ -26,9 +33,6 @@ h6 {
 	font-size: 100%;
 	font-weight: normal;
 	font-family: Shrikhand, Roboto, sans-serif;
-}
-ul {
-  list-style: none;
 }
 /*Loadspinner*/
 .loadspinner /*
@@ -178,12 +182,85 @@ button {
 .fa-mobile-alt:before {
     content: "\f3cd";
 }
+/*Restaurants*/
 
+@media screen and (min-width: 768px) {
+.restaurants-list{
+    display: flex;
+    -webkit-box-direction: normal;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+}
+.card-cover {
+        width: 40%;
+      }
+}
+h3 {
+  padding: 30px 0px 0px 20px;
+  font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #000;
+    width: 100%;
+    cursor: pointer;
+    flex-flow: column wrap;
+}
+.card-cover{
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px #aaa;
+  margin: 20px;
+  position: relative;
+  background: #fff;
+}
+.card-cover img {
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+}
 
+.icon-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h4{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+figcaption p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-left: 0;
+    margin:0px;
+}
+.btn-cover .new{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #99e2d0;
+    color: #2c9c81;
+    padding: 3px 10px;
+    font-weight: bold;
+    z-index: 999;
+}
+.card-cover figure {
+  margin: 0;
+}
 
-
-
-
-
-
+.card-cover figcaption {
+  margin: 0;
+  padding: 10px;
+}
 
