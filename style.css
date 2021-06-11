@@ -17,18 +17,18 @@ body, html {
     background-color: white;
     align-items: center;
     justify-content: center;
-    	box-sizing: border-box;
+    box-sizing: border-box;
 }
 a {
-  text-decoration: none;
-  color: #000;
+	text-decoration: none;
+	color: #000;
+    cursor: pointer;
 }
 li {
   list-style-type: none;
 }
 h3,
 h4,
-h5,
 h6 {
 	font-size: 100%;
 	font-weight: normal;
@@ -263,4 +263,31 @@ figcaption p {
   margin: 0;
   padding: 10px;
 }
-
+/********Footer*******/
+footer {
+    color: white;
+    background-color: #414141;
+	padding: 16px 20px;
+}
+footer h5 {
+	font-family: "Shrikhand", cursive;
+	font-size: 16px;
+	margin: 15px 0;
+}
+footer a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+footer a i {
+    width: 16px;
+    padding-right: 16px;
+	margin : 0;
+}
+footer a i + p {
+    font-weight: bolder;
+}
+footer p {
+    padding: 0.25em 0;
+	margin : 0;
+}
