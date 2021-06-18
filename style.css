@@ -1,3 +1,4 @@
+
 /* Police Générale & titre-logo*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
@@ -34,25 +35,6 @@ h6 {
 	font-weight: normal;
 	font-family: Shrikhand, Roboto, sans-serif;
 }
-/*Loadspinner*/
-.loadspinner /*
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 4;
-    animation: fade-out 0.4s ease-in-out both;
-    animation-delay: 1.5s;
-}
-.rubik-loader {
-    color:#9356DC;
-}
-****a finir*/
-
-/*header*/
 .header, .headerMenu {
     padding: 16px;
 	box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
@@ -109,6 +91,7 @@ main {
 }
 
 /*Section explore restaurants*/
+
 .explore-restaurants {
 	background-color: #f3f3f3;
     padding: 22px;
@@ -120,20 +103,31 @@ main {
 }
 .explore-restaurants h2 {
 	color: #707070;
-    font-size: 18px ;
+    font-size: 17px ;
     font-weight: normal;
+    margin-bottom: 15px;
 }
-button {
-    border: none;
-    padding: 16px;
-    margin: 32px 0;
-    font-size: large;
-    color: white;
-    background-image: linear-gradient(-10deg, #9356DC, #FF79DA);
-    border-radius: 50px;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-    transition: background-image 2s linear 2s, box-shadow 1s;
-}
+.reserve__btn-1 {
+    display: inline-block;
+    background: linear-gradient(#ff79da, #9356dc);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    font-weight: bold;
+    margin: 0 0.3em 0.3em 0;
+    padding: 15px 30px;
+    transition: 0.2s;
+  }
+  .reserve__btn-1:hover {
+    background: linear-gradient(#f77dd4, #ab65fa);
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+  }
+  
 /*operation*/
 
 .operation{
@@ -149,6 +143,10 @@ button {
     padding: 0;
     counter-reset: compteListe;
 }
+.bar:hover {
+    transform:scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
 .bar {
     padding: 24px;
     margin: 16px 0 16px 12px;
@@ -191,9 +189,18 @@ button {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    margin-top: 10px;
     padding: 15px;
+    margin-top: -60px;
 }
-.card-cover {
+@media only screen and (max-width: 768px){
+    .sectionhotels {
+      flex: 1.5;
+    }
+    
+    
+  }
+    .card-cover {
         width: 40%;
       }
 }
@@ -208,6 +215,10 @@ h3 {
     cursor: pointer;
     flex-flow: column wrap;
 }
+.card-cover:hover {
+    transform:scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
 .card-cover{
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
@@ -223,7 +234,20 @@ h3 {
   height: 100%;
   max-height: 220px;
 }
-
+.fill {
+    color: black;
+    cursor: pointer;
+}
+.fill:hover {
+      animation: fill 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+}
 .icon-heart {
   display: flex;
   justify-content: space-between;
@@ -263,6 +287,141 @@ figcaption p {
   margin: 0;
   padding: 10px;
 }
+/*****menu carte******/
+.cover_menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
+.menu_title {
+    font-family: Shrikhand, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+h2 {
+    margin: 0;
+}
+.fill {
+    color: black;
+    cursor: pointer;
+}
+.starter {
+    animation: fadein 3s ease-in-out;
+}
+.starter h3, .dish h3, .dessert h3 {
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.line {
+    width: 40px;
+    border: 2px solid #99E2D0;
+    margin-left: 10px;
+}
+.meals {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+}
+.meals h4 {
+    margin: 0;
+}
+.cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+}
+  
+.line {
+    width: 40px;
+    border: 2px solid #99E2D0;
+    margin-left: 10px;
+}
+  
+.last_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+}
+.last_line p {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.last_line span {
+    margin-right: 5px;
+}
+.cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 50px;
+    height: 63px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    top: 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+}
+.cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.dish {
+    animation: fadein 6s ease-in-out;
+}
+.starter h3, .dish h3, .dessert h3 {
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.dessert {
+    animation: fadein 9s ease-in-out;
+}
+
+.btn_order {
+    display: flex;
+    justify-content: center;
+    margin : 15px;
+}
+.btn_order .reserve__btn-1btn-2 {
+    display: inline-block;
+    background: linear-gradient(#ff79da, #9356dc);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    font-weight: bold;
+    margin: 0 0.3em 0.3em 0;
+    padding: 15px 30px;
+    transition: 0.2s;
+}
+
 /********Footer*******/
 footer {
     color: white;
@@ -291,3 +450,4 @@ footer p {
     padding: 0.25em 0;
 	margin : 0;
 }
+/*******Loadspinner********/
