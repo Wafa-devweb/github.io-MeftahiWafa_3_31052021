@@ -10,12 +10,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out; }
-  .meals:hover .cross {
-    opacity: 1;
-    transform: translate(-50px); }
-  .meals:hover .fa-check-circle {
-    transition: all 0.75s ease-in-out;
-    transform: rotate(360deg); }
+  .meals:hover {
+    padding-right: 88px; }
+    .meals:hover .cross {
+      opacity: 1;
+      transform: translate(-50px); }
+    .meals:hover .fa-check-circle {
+      transition: all 0.75s ease-in-out;
+      transform: rotate(360deg); }
 
 .cross {
   justify-content: center;
@@ -31,7 +33,10 @@
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: all 0.75s ease-in-out; }
+  transition: all 330ms ease-in-out; }
+  .cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out; }
 
 @keyframes loadspinner {
   100% {
@@ -76,12 +81,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out; }
-  .meals:hover .cross {
-    opacity: 1;
-    transform: translate(-50px); }
-  .meals:hover .fa-check-circle {
-    transition: all 0.75s ease-in-out;
-    transform: rotate(360deg); }
+  .meals:hover {
+    padding-right: 88px; }
+    .meals:hover .cross {
+      opacity: 1;
+      transform: translate(-50px); }
+    .meals:hover .fa-check-circle {
+      transition: all 0.75s ease-in-out;
+      transform: rotate(360deg); }
 
 .cross {
   justify-content: center;
@@ -97,7 +104,10 @@
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: all 0.75s ease-in-out; }
+  transition: all 330ms ease-in-out; }
+  .cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out; }
 
 @keyframes loadspinner {
   100% {
@@ -211,12 +221,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out; }
-  .meals:hover .cross {
-    opacity: 1;
-    transform: translate(-50px); }
-  .meals:hover .fa-check-circle {
-    transition: all 0.75s ease-in-out;
-    transform: rotate(360deg); }
+  .meals:hover {
+    padding-right: 88px; }
+    .meals:hover .cross {
+      opacity: 1;
+      transform: translate(-50px); }
+    .meals:hover .fa-check-circle {
+      transition: all 0.75s ease-in-out;
+      transform: rotate(360deg); }
 
 .cross {
   justify-content: center;
@@ -232,31 +244,34 @@
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: all 0.75s ease-in-out; }
+  transition: all 330ms ease-in-out; }
+  .cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out; }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
   .full_menu {
     display: flex;
     justify-content: space-around; } }
 
-.starter {
-  animation: fadein 3s ease-in-out; }
-  @media screen and (min-width: 1280px) {
-    .starter {
-      width: 400px; } }
-
 .restaurants, .location, .explore-restaurants, .operation {
   animation: fadein 3s ease-in-out; }
 
+.starter {
+  animation: fadein 3s ease-in-out; }
+  @media screen and (min-width: 1080px) {
+    .starter {
+      width: 400px; } }
+
 .dish {
   animation: fadein 6s ease-in-out; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     .dish {
       width: 400px; } }
 
 .dessert {
   animation: fadein 9s ease-in-out; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     .dessert {
       width: 400px; } }
 
@@ -276,17 +291,18 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1080px) {
       .last_line p {
         padding-right: 20px; } }
   .last_line span {
     margin-right: 5px; }
 
 .bar:hover {
-  transform: scale(1.02);
-  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
   color: #9356dc; }
-  .bar:hover:hover .tuto__icon {
+  .bar:hover:hover
+  .tuto__icon {
     color: #9356dc; }
 
 .meals {
@@ -301,12 +317,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out; }
-  .meals:hover .cross {
-    opacity: 1;
-    transform: translate(-50px); }
-  .meals:hover .fa-check-circle {
-    transition: all 0.75s ease-in-out;
-    transform: rotate(360deg); }
+  .meals:hover {
+    padding-right: 88px; }
+    .meals:hover .cross {
+      opacity: 1;
+      transform: translate(-50px); }
+    .meals:hover .fa-check-circle {
+      transition: all 0.75s ease-in-out;
+      transform: rotate(360deg); }
 
 .cross {
   justify-content: center;
@@ -322,31 +340,34 @@
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: all 0.75s ease-in-out; }
+  transition: all 330ms ease-in-out; }
+  .cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out; }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1080px) {
   .full_menu {
     display: flex;
     justify-content: space-around; } }
 
-.starter {
-  animation: fadein 3s ease-in-out; }
-  @media screen and (min-width: 1280px) {
-    .starter {
-      width: 400px; } }
-
 .restaurants, .location, .explore-restaurants, .operation {
   animation: fadein 3s ease-in-out; }
 
+.starter {
+  animation: fadein 3s ease-in-out; }
+  @media screen and (min-width: 1080px) {
+    .starter {
+      width: 400px; } }
+
 .dish {
   animation: fadein 6s ease-in-out; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     .dish {
       width: 400px; } }
 
 .dessert {
   animation: fadein 9s ease-in-out; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     .dessert {
       width: 400px; } }
 
@@ -366,17 +387,18 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1080px) {
       .last_line p {
         padding-right: 20px; } }
   .last_line span {
     margin-right: 5px; }
 
 .bar:hover {
-  transform: scale(1.02);
-  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
   color: #9356dc; }
-  .bar:hover:hover .tuto__icon {
+  .bar:hover:hover
+  .tuto__icon {
     color: #9356dc; }
 
 .fill {

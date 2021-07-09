@@ -1,5 +1,6 @@
 body, html {
     width : 100%;
+    height: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     margin: 0;
@@ -179,7 +180,7 @@ h1 {
 .restaurants {
         background-color: #f3f3f3;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px){
 .restaurants-list{
     display: flex;
     -webkit-box-direction: normal;
@@ -192,12 +193,12 @@ h1 {
 }
 @media only screen and (max-width: 768px){
     .sectionhotels {
-      flex: 1.5;
-}
-  }
+        flex: 1.5;
+    }
+
     .card-cover {
         width: 40%;
-      }
+    }
 }
 h3 {
   padding: 0px 20px;
@@ -228,6 +229,10 @@ h3 {
   width: 100%;
   height: 100%;
   max-height: 220px;
+}
+.starter, .dish, .dessert {
+    margin-bottom: 30px;
+    width: 375px;
 }
 .starter h3, .dish h3, .dessert h3 {
     padding-left: 10px;
@@ -278,6 +283,7 @@ figcaption p {
     width: 100%;
     position: relative;
     margin-top: -50px;
+    padding-bottom: 10px;
 }
 .menu_title {
     display: flex;
@@ -285,12 +291,17 @@ figcaption p {
     align-items: center;
     padding: 10px;
 }
+.menu_title .fill_heart{
+    margin-bottom: 20px;
+}
+
 .menu_title .title_h2 {
     font-weight: 400;
     font-style: italic;
     font-family : "Shrikhand", "cursif";
     font-size: 25px;
-    margin-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 5px;
 }
 
 .fill {
@@ -300,6 +311,7 @@ figcaption p {
 .full_menu{
     margin-top: -45px;
 }
+
 .meals h4 {
     margin: 0;
 }
@@ -350,5 +362,6 @@ footer a i {
     margin : 0;
 }
 footer p {
-    padding: 0.25em 0;
-    margin : 0;
+    padding:0.25em 0;
+    margin:0;
+}

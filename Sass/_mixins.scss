@@ -12,6 +12,7 @@
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
   &:hover {
+    padding-right: 88px;
     .cross {
       opacity: 1;
       transform: translate(-50px);
@@ -22,6 +23,7 @@
     }
   }
 }
+
 .cross {
   justify-content: center;
   align-items: center;
@@ -36,8 +38,13 @@
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: all 0.75s ease-in-out;
+  transition: all 330ms ease-in-out;
+  .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+  }
 }
+
 @mixin tablet {
   @media screen and (min-width:map-get($breakpoints, tablet)){
     @content;
