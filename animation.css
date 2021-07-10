@@ -249,7 +249,7 @@
     color: #fff;
     transition: transform 500ms ease-in-out; }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .full_menu {
     display: flex;
     justify-content: space-around; } }
@@ -259,19 +259,19 @@
 
 .starter {
   animation: fadein 3s ease-in-out; }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     .starter {
       width: 400px; } }
 
 .dish {
   animation: fadein 6s ease-in-out; }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     .dish {
       width: 400px; } }
 
 .dessert {
   animation: fadein 9s ease-in-out; }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     .dessert {
       width: 400px; } }
 
@@ -291,7 +291,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1280px) {
       .last_line p {
         padding-right: 20px; } }
   .last_line span {
@@ -345,7 +345,7 @@
     color: #fff;
     transition: transform 500ms ease-in-out; }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .full_menu {
     display: flex;
     justify-content: space-around; } }
@@ -355,19 +355,19 @@
 
 .starter {
   animation: fadein 3s ease-in-out; }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     .starter {
       width: 400px; } }
 
 .dish {
   animation: fadein 6s ease-in-out; }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     .dish {
       width: 400px; } }
 
 .dessert {
   animation: fadein 9s ease-in-out; }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px) {
     .dessert {
       width: 400px; } }
 
@@ -387,7 +387,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1280px) {
       .last_line p {
         padding-right: 20px; } }
   .last_line span {

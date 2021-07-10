@@ -1,6 +1,5 @@
 body, html {
     width : 100%;
-    height: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     margin: 0;
@@ -180,24 +179,21 @@ h1 {
 .restaurants {
         background-color: #f3f3f3;
 }
-@media screen and (min-width: 768px) and (max-width: 1280px){
-.restaurants-list{
-    display: flex;
-    -webkit-box-direction: normal;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-top: 10px;
-    padding: 15px;
-    margin-top: -60px;
+@media screen (min-width: 768px) and (max-width: 1280px){
+    .restaurants-list{
+        display: flex;
+        -webkit-box-direction normal
+        flex-wrap wrap
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 10px;
+        padding: 15px;
+        margin-top: -60px;
+    }
 }
 @media only screen and (max-width: 768px){
     .sectionhotels {
         flex: 1.5;
-    }
-
-    .card-cover {
-        width: 40%;
     }
 }
 h3 {
@@ -361,7 +357,7 @@ footer a i {
     padding-right: 16px;
     margin : 0;
 }
-footer p {
+footer p{
     padding:0.25em 0;
     margin:0;
 }
