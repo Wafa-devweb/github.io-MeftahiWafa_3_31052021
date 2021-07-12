@@ -1,5 +1,4 @@
 body, html {
-    width : 100%;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     margin: 0;
@@ -205,9 +204,10 @@ h3 {
     cursor: pointer;
     width: 100%;
     flex-flow: column wrap;
+    margin-top: 55px ;
 }
 .card-cover:hover {
-    transform:scale(1.05);
+    transform:scale(1.01);
     transition: all 0.2s ease-in-out;
   }
 .card-cover{
@@ -285,9 +285,10 @@ figcaption p {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin-top: 10px ;
 }
 .menu_title .fill_heart{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .menu_title .title_h2 {
@@ -295,7 +296,6 @@ figcaption p {
     font-style: italic;
     font-family : "Shrikhand", "cursif";
     font-size: 25px;
-    padding-bottom: 20px;
     margin-top: 5px;
 }
 
