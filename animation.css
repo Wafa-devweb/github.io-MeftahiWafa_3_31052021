@@ -1,0 +1,200 @@
+.meals {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out; }
+  .meals:hover {
+    padding-right: 88px; }
+    .meals:hover .cross {
+      opacity: 1;
+      transform: translate(-45px); }
+    .meals:hover .fa-check-circle {
+      transition: all 0.75s ease-in-out;
+      transform: rotate(360deg); }
+
+.cross {
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #fff;
+  width: 50px;
+  height: 63px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: all 330ms ease-in-out; }
+  .cross .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+    margin-left: 6px; }
+
+@keyframes loadspinner {
+  100% {
+    opacity: 0;
+    z-index: -10; } }
+@keyframes spinner {
+  0% {
+    background: #fface8;
+    transform: rotate(0deg); }
+  50% {
+    background: #ff79da;
+    transform: rotate(180deg); }
+  100% {
+    background: #fface8;
+    transform: rotate(360deg); } }
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1); } }
+@keyframes fill {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+
+.fill {
+  color: #9d9d9d;
+  cursor: pointer; }
+  .fill:hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold; }
+
+.icon-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.loadspinner {
+  -webkit-animation: loadspinner 2s;
+  animation: loadspinner 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-color: rgba(10, 10, 10, 0.6);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 999; }
+  .loadspinner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .loadspinner .spinner-wrapper {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 100px; }
+    .loadspinner .spinner-wrapper .spinner-cover {
+      background: #fff;
+      border-radius: 50%;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 2; }
+    .loadspinner .spinner-wrapper .spinner-bar {
+      -webkit-animation: spinner 2s linear infinite;
+      animation: spinner 2s linear infinite;
+      background: #ff79da;
+      border-radius: 100% 0 0;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      width: 50%; }
+
+@media screen and (min-width: 1280px) {
+  .full_menu {
+    display: flex;
+    justify-content: space-around; } }
+
+.restaurants {
+  animation: fadein 2s ease-in-out; }
+
+.starter {
+  animation: fadein 2s ease-in-out; }
+  @media screen and (min-width: 1280px) {
+    .starter {
+      width: 400px; } }
+
+.dish {
+  animation: fadein 3s ease-in-out; }
+  @media screen and (min-width: 1280px) {
+    .dish {
+      width: 400px; } }
+
+.dessert {
+  animation: fadein 4s ease-in-out; }
+  @media screen and (min-width: 1280px) {
+    .dessert {
+      width: 400px; } }
+
+.line {
+  width: 40px;
+  border: 2px solid #99e2d0;
+  margin-left: 10px; }
+
+.last_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em; }
+  .last_line p {
+    margin: 0;
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    @media screen and (min-width: 1280px) {
+      .last_line p {
+        padding-right: 20px; } }
+  .last_line span {
+    margin-right: 5px; }
+
+.bar:hover {
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+  color: #9356dc; }
+  .bar:hover:hover
+  .tuto__icon {
+    color: #9356dc; }
+    
+/*# sourceMappingURL=animation.css.map */
