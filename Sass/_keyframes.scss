@@ -1,0 +1,54 @@
+//Load Spinner animation wrapper
+
+@keyframes loadspinner {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  
+  //Spinner animation rotate
+  @keyframes spinner {
+    0% {
+      background: lighten($secondary, 10);
+      transform: rotate(0deg);
+    }
+    50% {
+      background: $secondary;
+      transform: rotate(180deg);
+    }
+    100% {
+      background: lighten($secondary, 10);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    from{
+      -webkit-transform: rotate(0deg);
+    }
+    to{
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+@keyframes fadein {
+  from {
+    transform: scale(.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
