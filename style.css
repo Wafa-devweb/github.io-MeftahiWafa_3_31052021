@@ -201,7 +201,6 @@ h3 {
     color: #000;
     cursor: pointer;
     flex-flow: column wrap;
-    margin-top: 55px ;
 }
 .card-cover:hover {
     transform:scale(1.01);
